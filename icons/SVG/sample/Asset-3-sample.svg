@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 807.23 710.895">
+  <defs>
+    <clipPath id="imgClip">
+      <path d="M0.714 710.395 L259.095 0.5 L467.516 0.5 L209.135 710.395 Z M219.872 710.395 L478.253 0.5 L654.463 0.5 L396.082 710.395 Z M403.082 710.395 L661.463 0.5 L806.516 0.5 L548.135 710.395 Z"/>
+    </clipPath>
+  </defs>
+  <title>Asset 3 Sample</title>
+  <g clip-path="url(#imgClip)">
+    <image href="/gambar/assets_3.png" x="0" y="0" width="807.23" height="710.895" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+</svg>

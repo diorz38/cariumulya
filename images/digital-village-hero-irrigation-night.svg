@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="titleIrrigNight descIrrigNight">
+  <title id="titleIrrigNight">Ilustrasi Malam 3D Pembangunan Saluran Irigasi Sawah Desa</title>
+  <desc id="descIrrigNight">Pemandangan malam bendung irigasi desa dengan pantulan air yang jernih, lampu sorot proyek, dan gemercik aliran air ke persawahan.</desc>
+  <defs>
+    <!-- Night Island Base -->
+    <linearGradient id="islandTopIrrigNight" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#431407"/>
+      <stop offset=".5" stop-color="#2d0a02"/>
+      <stop offset="1" stop-color="#190400"/>
+    </linearGradient>
+    <linearGradient id="islandSideIrrigNight" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#220701"/>
+      <stop offset="1" stop-color="#0a0100"/>
+    </linearGradient>
+
+    <!-- Night Stream -->
+    <linearGradient id="streamGradNight" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0284c7"/>
+      <stop offset=".4" stop-color="#0369a1"/>
+      <stop offset="1" stop-color="#075985"/>
+    </linearGradient>
+
+    <!-- Project Floodlight Glow -->
+    <radialGradient id="floodlightGlow" cx="50%" cy="50%" r="50%">
+      <stop stop-color="#ffffff"/>
+      <stop offset=".3" stop-color="#fef08a" stop-opacity=".8"/>
+      <stop offset=".7" stop-color="#38bdf8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="lightGlowIrrig" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient Shadow -->
+  <ellipse cx="805" cy="897" rx="650" ry="140" fill="#0d0301" opacity=".5" filter="url(#lightGlowIrrig)"/>
+
+  <!-- BASE ISOMETRIC ISLAND -->
+  <path d="M92 680 795 318 1510 700 803 1058 92 680Z" fill="url(#islandSideIrrigNight)"/>
+  <path d="M92 680 803 1058 1510 700 1494 682 803 1025 108 666Z" fill="#0a0100"/>
+  <path d="M92 662 795 300 1510 682 803 1040 92 662Z" fill="url(#islandTopIrrigNight)"/>
+
+  <!-- Night Rice Fields -->
+  <path d="M180 540 520 380 620 440 280 610Z" fill="#064e3b" opacity=".7"/>
+  <path d="M1020 540 1420 620 1260 840 920 690Z" fill="#064e3b" opacity=".7"/>
+
+  <!-- Upstream Water Reservoir (Night) -->
+  <polygon points="560,340 795,300 940,360 700,410" fill="url(#streamGradNight)"/>
+
+  <!-- ========================================== -->
+  <!-- DAM / WEIR AT NIGHT WITH SITE FLOODLIGHTS  -->
+  <!-- ========================================== -->
+  <!-- Central Spillway Crest -->
+  <polygon points="655,360 865,360 865,385 655,385" fill="#334155"/>
+  <polygon points="655,385 865,385 865,455 655,455" fill="#0284c7" opacity=".85"/>
+  <ellipse cx="760" cy="460" rx="110" ry="20" fill="#e0f2fe" opacity=".7"/>
+
+  <!-- Gantry Towers & Sluice Gates -->
+  <rect x="670" y="270" width="12" height="110" rx="2" fill="#1e293b"/>
+  <rect x="745" y="270" width="12" height="110" rx="2" fill="#1e293b"/>
+  <rect x="825" y="270" width="12" height="110" rx="2" fill="#1e293b"/>
+  <polygon points="650,270 850,270 860,285 660,285" fill="#0f172a"/>
+
+  <!-- Red Handwheels in night light -->
+  <ellipse cx="712" cy="265" rx="14" ry="6" fill="#991b1b"/>
+  <ellipse cx="790" cy="265" rx="14" ry="6" fill="#991b1b"/>
+
+  <!-- Steel Gates at night -->
+  <rect x="690" y="325" width="46" height="50" rx="2" fill="#0c4a6e"/>
+  <rect x="768" y="335" width="46" height="40" rx="2" fill="#0c4a6e"/>
+
+  <!-- ILLUMINATED SITE FLOODLIGHT on the Gantry -->
+  <circle cx="760" cy="285" r="80" fill="url(#floodlightGlow)" filter="url(#lightGlowIrrig)"/>
+  <circle cx="760" cy="285" r="6" fill="#ffffff"/>
+
+  <!-- ========================================== -->
+  <!-- PRIMARY CANAL AT NIGHT                     -->
+  <!-- ========================================== -->
+  <path d="M720 480 Q640 620 540 820 L660 880 Q760 670 820 480 Z" fill="url(#streamGradNight)"/>
+  <!-- Moon & light reflection on canal water -->
+  <path d="M710 520 Q660 630 580 770" stroke="#7dd3fc" stroke-width="2.5" fill="none" opacity=".8"/>
+  <path d="M750 540 Q710 650 640 800" stroke="#bae6fd" stroke-width="2" fill="none" opacity=".6"/>
+
+  <path d="M700 465 L500 800" stroke="#475569" stroke-width="10" stroke-linecap="round"/>
+  <path d="M845 465 L685 860" stroke="#64748b" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Construction Area Silhouettes at Night -->
+  <g id="tumpukanBatuNight" transform="translate(380, 680)">
+    <ellipse cx="30" cy="25" rx="35" ry="12" fill="#0d0301" opacity=".5"/>
+    <ellipse cx="20" cy="20" rx="14" ry="9" fill="#334155"/>
+    <ellipse cx="40" cy="18" rx="16" ry="10" fill="#1e293b"/>
+    <ellipse cx="30" cy="10" rx="15" ry="10" fill="#475569"/>
+  </g>
+
+  <!-- Wheelbarrow parked -->
+  <g id="gerobakNight" transform="translate(440, 780)">
+    <circle cx="8" cy="20" r="9" fill="#0f172a"/>
+    <polygon points="12,18 42,5 48,15 16,28" fill="#d97706"/>
+    <!-- Small yellow warning strobe light on equipment -->
+    <circle cx="28" cy="12" r="4" fill="#facc15" filter="url(#lightGlowIrrig)"/>
+  </g>
+</svg>

@@ -1,0 +1,331 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="titleKiosk descKiosk">
+  <title id="titleKiosk">Ilustrasi 3D Gedung Pusat Pelayanan Publik Digital Desa (Open-Roof)</title>
+  <desc id="descKiosk">Gedung modern pusat pelayanan digital desa berkonsep open-roof arsitektur isometrik, memperlihatkan loket administrasi kependudukan terpadu, anjungan cetak surat mandiri, layar antrean elektronik, dan fasilitas smart governance desa.</desc>
+  <defs>
+    <!-- Island Base Gradients -->
+    <linearGradient id="islandTopKiosk" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f8fafc"/>
+      <stop offset=".45" stop-color="#e2e8f0"/>
+      <stop offset="1" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="islandSideKiosk" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#334155"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Open-Roof Interior Floor (Lantai Ruang Pelayanan Publik) -->
+    <linearGradient id="interiorFloor" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset=".5" stop-color="#f1f5f9"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+
+    <!-- Architecture Walls (Cutaway Back & Side Walls) -->
+    <linearGradient id="wallBackLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e2e8f0"/>
+      <stop offset=".5" stop-color="#cbd5e1"/>
+      <stop offset="1" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="wallBackRight" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#94a3b8"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="wallCap" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#ffffff"/>
+      <stop offset=".5" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="wallAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0284c7"/>
+      <stop offset="1" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <!-- Glass Partitions & Office Windows -->
+    <linearGradient id="glassWindow" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e0f2fe" stop-opacity=".85"/>
+      <stop offset=".5" stop-color="#bae6fd" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="interiorWarmth" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fef08a" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#fed7aa" stop-opacity=".6"/>
+    </linearGradient>
+
+    <!-- Touchscreens & LED Displays -->
+    <linearGradient id="touchScreen" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#38bdf8"/>
+      <stop offset=".5" stop-color="#0284c7"/>
+      <stop offset="1" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="kioskChassis" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset=".6" stop-color="#f1f5f9"/>
+      <stop offset="1" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="softShadowKiosk" x="-40%" y="-50%" width="180%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="bldgShadowKiosk" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="signGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Plaza Paver Pattern -->
+    <pattern id="plazaPattern" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <path d="M0 14h28M14 0v28" stroke="#94a3b8" stroke-width="1" opacity=".35"/>
+    </pattern>
+  </defs>
+
+  <!-- Ambient Shadow -->
+  <ellipse cx="805" cy="897" rx="650" ry="140" fill="#090d16" opacity=".28" filter="url(#softShadowKiosk)"/>
+
+  <!-- BASE ISOMETRIC ISLAND (Civic Podium Ground) -->
+  <path d="M92 680 795 318 1510 700 803 1058 92 680Z" fill="url(#islandSideKiosk)" opacity=".95"/>
+  <path d="M92 680 803 1058 1510 700 1494 682 803 1025 108 666Z" fill="#090d16" opacity=".85"/>
+  <path d="M92 662 795 300 1510 682 803 1040 92 662Z" fill="url(#islandTopKiosk)"/>
+  <path d="M92 662 795 300 1510 682 803 1040 92 662Z" fill="url(#plazaPattern)"/>
+
+  <!-- Glowing Digital Data Highway Streams on Plaza Ground -->
+  <path d="M260 670 L640 860 L1200 680 L820 490 Z" stroke="#38bdf8" stroke-width="2.5" fill="none" opacity=".6" filter="url(#glowCyan)"/>
+  <path d="M420 750 L640 860 L920 810" stroke="#0ea5e9" stroke-width="3" fill="none" opacity=".8"/>
+  <circle cx="640" cy="860" r="7" fill="#38bdf8" filter="url(#glowCyan)"/>
+  <circle cx="1200" cy="680" r="6" fill="#38bdf8" filter="url(#glowCyan)"/>
+  <circle cx="820" cy="490" r="6" fill="#38bdf8" filter="url(#glowCyan)"/>
+
+  <!-- ====================================================================== -->
+  <!-- OPEN-ROOF DIGITAL PUBLIC SERVICE CENTER (Gedung Pelayanan Open-Plan)   -->
+  <!-- ====================================================================== -->
+  <g id="gedungPelayananDigitalOpenRoof">
+    <!-- Huge Building Ground Shadow -->
+    <polygon points="340,680 820,440 1340,680 840,940" fill="#090d16" opacity=".35" filter="url(#bldgShadowKiosk)"/>
+
+    <!-- Podium Foundation Base Plinth -->
+    <polygon points="380,660 820,430 1280,660 820,890" fill="#ffffff"/>
+    <polygon points="380,660 820,890 820,910 380,680" fill="#cbd5e1"/>
+    <polygon points="820,890 1280,660 1280,680 820,910" fill="#94a3b8"/>
+
+    <!-- Fully Exposed Open Interior Floor (Lantai Dalam Balai Layanan Publik) -->
+    <polygon points="400,650 820,440 1260,650 820,860" fill="url(#interiorFloor)"/>
+    <!-- Interior floor tile grid lines -->
+    <line x1="500" y1="600" x2="920" y2="810" stroke="#cbd5e1" stroke-width="1.5" opacity=".6"/>
+    <line x1="600" y1="550" x2="1020" y2="760" stroke="#cbd5e1" stroke-width="1.5" opacity=".6"/>
+    <line x1="700" y1="500" x2="1120" y2="710" stroke="#cbd5e1" stroke-width="1.5" opacity=".6"/>
+    <line x1="720" y1="690" x2="1140" y2="480" stroke="#cbd5e1" stroke-width="1.5" opacity=".6"/>
+    <line x1="620" y1="740" x2="1040" y2="530" stroke="#cbd5e1" stroke-width="1.5" opacity=".6"/>
+    <line x1="520" y1="790" x2="940" y2="580" stroke="#cbd5e1" stroke-width="1.5" opacity=".6"/>
+
+    <!-- BACK-LEFT REAR WALL (Dinding Belakang Kiri dengan Top Coping) -->
+    <polygon points="400,650 820,440 820,290 400,500" fill="url(#wallBackLeft)"/>
+    <!-- Isometric Top Wall Cap (Ketebalan Dinding Atas Terbuka) -->
+    <polygon points="400,500 820,290 832,296 412,506" fill="url(#wallCap)"/>
+    <polygon points="412,506 832,296 832,306 412,516" fill="#cbd5e1"/>
+
+    <!-- BACK-RIGHT REAR WALL (Dinding Belakang Kanan dengan Jendela Modern) -->
+    <polygon points="820,440 1260,650 1260,500 820,290" fill="url(#wallBackRight)"/>
+    <!-- Top Wall Cap -->
+    <polygon points="820,290 1260,500 1248,506 808,296" fill="url(#wallCap)"/>
+
+    <!-- Modern Windows in Back-Right Wall -->
+    <polygon points="860,340 960,390 960,450 860,400" fill="url(#glassWindow)"/>
+    <polygon points="1000,410 1100,460 1100,520 1000,470" fill="url(#glassWindow)"/>
+    <polygon points="1140,480 1220,520 1220,580 1140,540" fill="url(#glassWindow)"/>
+
+    <!-- PROMINENT CIVIC ENTRANCE PORTAL & SIGNBOARD (Gapura Pintu Masuk Layanan) -->
+    <!-- Entrance Arch Totem on Front Left -->
+    <polygon points="390,650 490,600 490,440 390,490" fill="url(#wallAccent)"/>
+    <polygon points="490,600 520,615 520,455 490,440" fill="#075985"/>
+    <polygon points="390,490 490,440 520,455 420,505" fill="#38bdf8"/>
+
+    <!-- Glowing Text on Entrance Portal -->
+    <g transform="translate(405, 510) skewY(-26)">
+      <!-- Digital Shield Emblem -->
+      <polygon points="8,-8 18,-13 28,-8 28,8 18,13 8,8" fill="#ffffff"/>
+      <circle cx="18" cy="2" r="3" fill="#0284c7"/>
+      <text x="35" y="0" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="11">LAYANAN DESA DIGITAL</text>
+      <text x="35" y="12" fill="#bae6fd" font-family="sans-serif" font-weight="700" font-size="7">TERPADU &amp; MANDIRI</text>
+    </g>
+
+    <!-- High-Tech Telecom Hub Mast at the Rear Corner -->
+    <g id="menaraData" transform="translate(820, 290)">
+      <line x1="0" y1="0" x2="0" y2="-90" stroke="#e2e8f0" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-15" y1="-30" x2="15" y2="-30" stroke="#94a3b8" stroke-width="3"/>
+      <line x1="-10" y1="-55" x2="10" y2="-55" stroke="#94a3b8" stroke-width="3"/>
+      <circle cx="0" cy="-90" r="6" fill="#38bdf8" filter="url(#glowCyan)"/>
+      <path d="M-22 -85 Q0 -105 22 -85" stroke="#38bdf8" stroke-width="2.5" fill="none" opacity=".8"/>
+      <path d="M-34 -80 Q0 -115 34 -80" stroke="#0284c7" stroke-width="2" fill="none" opacity=".6"/>
+    </g>
+
+    <!-- INDONESIAN MERAH PUTIH FLAGPOLE ON FORECOURT -->
+    <g transform="translate(1220, 680)">
+      <ellipse cx="0" cy="15" rx="14" ry="7" fill="#64748b"/>
+      <line x1="0" y1="15" x2="0" y2="-150" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="0" cy="-150" r="4" fill="#fbbf24"/>
+      <path d="M0 -145 Q25 -152 50 -142 Q40 -125 50 -115 Q25 -125 0 -115 Z" fill="#dc2626"/>
+      <path d="M0 -115 Q25 -125 50 -115 Q40 -98 50 -88 Q25 -98 0 -88 Z" fill="#ffffff"/>
+    </g>
+
+    <!-- ====================================================================== -->
+    <!-- SERVICE WINDOW COUNTERS (Loket Pelayanan Terbuka Tanpa Atap)          -->
+    <!-- ====================================================================== -->
+    <!-- Front Counter Desks inside the open room -->
+    <!-- Loket 1: Administrasi Kependudukan (KTP, KK, Akta) -->
+    <g id="loket1" transform="translate(680, 520)">
+      <polygon points="0,30 90,45 90,0 0,-15" fill="url(#glassWindow)"/>
+      <polygon points="0,30 90,45 90,55 0,40" fill="#0284c7"/>
+      <!-- Counter Desk Surface -->
+      <polygon points="0,-15 90,0 120,15 30,0" fill="#ffffff"/>
+      <!-- Counter Staff Officer seated -->
+      <ellipse cx="65" cy="-8" rx="8" ry="10" fill="#1e293b"/>
+      <circle cx="65" cy="-22" r="6" fill="#fed7aa"/>
+      <!-- Computer Monitor with glowing screen facing counter -->
+      <polygon points="40,-2 60,8 60,-12 40,-22" fill="#0284c7" filter="url(#glowCyan)"/>
+      <!-- Loket Sign Blade -->
+      <polygon points="5,-40 85,-27 85,-10 5,-23" fill="#0f172a"/>
+      <text x="10" y="-23" fill="#38bdf8" font-family="sans-serif" font-weight="900" font-size="8.5" transform="skewY(9)">LOKET 1: KTP &amp; KK</text>
+    </g>
+
+    <!-- Loket 2: Surat Mandiri & Perizinan Usaha Desa -->
+    <g id="loket2" transform="translate(840, 600)">
+      <polygon points="0,30 90,45 90,0 0,-15" fill="url(#glassWindow)"/>
+      <polygon points="0,30 90,45 90,55 0,40" fill="#0284c7"/>
+      <polygon points="0,-15 90,0 120,15 30,0" fill="#ffffff"/>
+      <ellipse cx="65" cy="-8" rx="8" ry="10" fill="#047857"/>
+      <circle cx="65" cy="-22" r="6" fill="#fed7aa"/>
+      <polygon points="40,-2 60,8 60,-12 40,-22" fill="#0284c7" filter="url(#glowCyan)"/>
+      <polygon points="5,-40 85,-27 85,-10 5,-23" fill="#0f172a"/>
+      <text x="10" y="-23" fill="#38bdf8" font-family="sans-serif" font-weight="900" font-size="8.5" transform="skewY(9)">LOKET 2: SURAT &amp; IZIN</text>
+    </g>
+
+    <!-- Loket 3: Bantuan Sosial, Layanan Warga & Konsultasi -->
+    <g id="loket3" transform="translate(1000, 680)">
+      <polygon points="0,30 85,42 85,0 0,-15" fill="url(#glassWindow)"/>
+      <polygon points="0,30 85,42 85,52 0,40" fill="#0284c7"/>
+      <polygon points="0,-15 85,0 115,15 30,0" fill="#ffffff"/>
+      <ellipse cx="60" cy="-8" rx="8" ry="10" fill="#b91c1c"/>
+      <circle cx="60" cy="-22" r="6" fill="#fed7aa"/>
+      <polygon points="35,-2 55,8 55,-12 35,-22" fill="#0284c7" filter="url(#glowCyan)"/>
+      <polygon points="5,-40 80,-28 80,-10 5,-22" fill="#0f172a"/>
+      <text x="8" y="-23" fill="#38bdf8" font-family="sans-serif" font-weight="900" font-size="8" transform="skewY(9)">LOKET 3: BANSOS</text>
+    </g>
+
+    <!-- Citizen Waiting Lounge Chairs inside Open Room -->
+    <g id="waitingChairs" transform="translate(680, 700)">
+      <!-- Modern Civic Lounge Chairs -->
+      <polygon points="0,15 30,0 45,7 15,22" fill="#38bdf8"/>
+      <polygon points="0,15 15,22 15,28 0,21" fill="#0284c7"/>
+      <polygon points="40,35 70,20 85,27 55,42" fill="#38bdf8"/>
+      <polygon points="40,35 55,42 55,48 40,41" fill="#0284c7"/>
+      <!-- Citizen seated inside -->
+      <ellipse cx="25" cy="5" rx="7" ry="9" fill="#475569"/>
+      <circle cx="25" cy="-8" r="5" fill="#fed7aa"/>
+    </g>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- LARGE DIGITAL QUEUE MONITOR (Layar Antrean Elektronik Berdiri)         -->
+  <!-- ====================================================================== -->
+  <g id="antreanDisplay" transform="translate(560, 520)">
+    <!-- Sleek Free-Standing Totem Pole -->
+    <line x1="45" y1="0" x2="45" y2="70" stroke="#0f172a" stroke-width="4"/>
+    <ellipse cx="45" cy="70" rx="12" ry="5" fill="#64748b"/>
+
+    <!-- LED Display Housing -->
+    <polygon points="0,20 90,-25 90,45 0,90" fill="#020617"/>
+    <!-- Radiant Glowing Screen -->
+    <polygon points="5,23 85,-20 85,40 5,83" fill="#0369a1" filter="url(#glowCyan)"/>
+
+    <g transform="translate(12, 23) skewY(-26)">
+      <rect x="0" y="-12" width="68" height="10" fill="#0284c7"/>
+      <text x="5" y="-4" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="6">ANTREAN DIGITAL</text>
+      <text x="5" y="14" fill="#fef08a" font-family="sans-serif" font-weight="900" font-size="18">A-024</text>
+      <text x="5" y="27" fill="#38bdf8" font-family="sans-serif" font-weight="800" font-size="8">MENUJU LOKET 1</text>
+      <text x="5" y="38" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="6.5">B-012 • LOKET 2</text>
+    </g>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- FORECOURT ANJUNGAN SURAT MANDIRI (Self-Service Automated Kiosk)        -->
+  <!-- ====================================================================== -->
+  <g id="anjunganSuratMandiri" transform="translate(480, 680)">
+    <ellipse cx="60" cy="150" rx="60" ry="24" fill="#090d16" opacity=".4"/>
+
+    <!-- Kiosk Totem Structure -->
+    <polygon points="20,120 60,95 95,115 55,140" fill="#cbd5e1"/>
+    <polygon points="20,120 55,140 55,150 20,130" fill="#64748b"/>
+    <polygon points="55,140 95,115 95,125 55,150" fill="#475569"/>
+
+    <polygon points="28,25 68,0 95,16 55,42" fill="#ffffff"/>
+    <polygon points="28,25 55,42 55,135 28,118" fill="url(#kioskChassis)"/>
+    <polygon points="55,42 95,16 95,110 55,135" fill="#cbd5e1"/>
+
+    <!-- Interactive Touchscreen -->
+    <polygon points="36,44 64,26 80,36 52,54" fill="#0f172a"/>
+    <polygon points="37,47 52,56 78,40 63,30" fill="url(#touchScreen)" filter="url(#glowCyan)"/>
+
+    <!-- Menu Icons -->
+    <rect x="42" y="45" width="8" height="6" rx="1" fill="#ffffff" opacity=".95"/>
+    <rect x="54" y="40" width="8" height="6" rx="1" fill="#38bdf8" opacity=".95"/>
+    <rect x="66" y="35" width="8" height="6" rx="1" fill="#facc15" opacity=".95"/>
+
+    <!-- Biometric Fingerprint Scanner Pad -->
+    <ellipse cx="54" cy="74" rx="6" ry="4" fill="#38bdf8" filter="url(#glowCyan)"/>
+
+    <!-- e-KTP RFID Reader -->
+    <rect x="36" y="85" width="18" height="3" rx="1" fill="#0284c7"/>
+    <text x="38" y="84" fill="#38bdf8" font-family="sans-serif" font-weight="900" font-size="5">TAP e-KTP</text>
+
+    <!-- Dispensed Village Document with Red & Gold Ribbon Seal -->
+    <rect x="34" y="102" width="30" height="4" rx="1" fill="#0f172a"/>
+    <polygon points="38,103 62,90 72,110 48,123" fill="#ffffff"/>
+    <line x1="43" y1="108" x2="59" y2="99" stroke="#0284c7" stroke-width="2"/>
+    <line x1="46" y1="113" x2="62" y2="104" stroke="#0284c7" stroke-width="2"/>
+    <circle cx="63" cy="112" r="3.5" fill="#dc2626"/>
+    <circle cx="63" cy="112" r="2" fill="#fbbf24"/>
+
+    <!-- Kiosk Header -->
+    <rect x="34" y="12" width="45" height="12" rx="2" fill="#0284c7"/>
+    <text x="36" y="21" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="5.5">ANJUNGAN MANDIRI</text>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- CITIZEN INTERACTING WITH KIOSK                                         -->
+  <!-- ====================================================================== -->
+  <g id="wargaKiosk" transform="translate(450, 770)">
+    <ellipse cx="20" cy="50" rx="18" ry="8" fill="#090d16" opacity=".4"/>
+    <line x1="16" y1="28" x2="14" y2="48" stroke="#1e293b" stroke-width="4"/>
+    <line x1="24" y1="28" x2="26" y2="48" stroke="#1e293b" stroke-width="4"/>
+    <rect x="10" y="12" width="18" height="18" rx="3" fill="#0284c7"/>
+    <circle cx="19" cy="5" r="6" fill="#fed7aa"/>
+    <line x1="26" y1="16" x2="38" y2="8" stroke="#0284c7" stroke-width="3.5"/>
+    <circle cx="38" cy="8" r="2" fill="#fed7aa"/>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- SMART VILLAGE SERVICE VEHICLE (Mobil Layanan Keliling Desa)            -->
+  <!-- ====================================================================== -->
+  <g id="mobilLayanan" transform="translate(1000, 770)">
+    <ellipse cx="60" cy="50" rx="65" ry="20" fill="#090d16" opacity=".4"/>
+    <circle cx="25" cy="45" r="14" fill="#0f172a"/>
+    <circle cx="95" cy="45" r="14" fill="#0f172a"/>
+    <circle cx="25" cy="45" r="7" fill="#cbd5e1"/>
+    <circle cx="95" cy="45" r="7" fill="#cbd5e1"/>
+    <path d="M10 40 L25 15 L70 15 L115 25 L115 45 Z" fill="#ffffff"/>
+    <path d="M10 40 L115 45 L115 48 L10 43 Z" fill="#cbd5e1"/>
+    <rect x="25" y="28" width="80" height="9" fill="#0284c7"/>
+    <text x="28" y="35" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="6">LAYANAN KELILING DESA</text>
+    <polygon points="30,17 48,17 46,26 28,26" fill="url(#glassWindow)"/>
+    <polygon points="52,17 72,17 70,26 50,26" fill="url(#glassWindow)"/>
+    <rect x="50" y="10" width="22" height="4" rx="2" fill="#dc2626"/>
+    <circle cx="53" cy="12" r="2" fill="#facc15"/>
+    <circle cx="69" cy="12" r="2" fill="#38bdf8"/>
+  </g>
+</svg>

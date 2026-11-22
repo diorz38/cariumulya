@@ -1,0 +1,293 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="titleHerit descHerit">
+  <title id="titleHerit">Ilustrasi 3D Musyawarah Warga Desa Jawa di Pendopo Joglo</title>
+  <desc id="descHerit">Pertemuan dan rembug desa di Pendopo Joglo tradisional Jawa, musyawarah warga beralaskan tikar, pos ronda dengan kentongan, dan bendera Merah Putih.</desc>
+  <defs>
+    <!-- Island Base Gradients -->
+    <linearGradient id="islandTopHerit" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f5e6d3"/>
+      <stop offset=".45" stop-color="#ebd5be"/>
+      <stop offset="1" stop-color="#ddc0a3"/>
+    </linearGradient>
+    <linearGradient id="islandSideHerit" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#7c2d12"/>
+      <stop offset="1" stop-color="#431407"/>
+    </linearGradient>
+
+    <!-- Joglo Terracotta Roof Tiles -->
+    <linearGradient id="jogloRoofTop" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ea580c"/>
+      <stop offset=".5" stop-color="#c2410c"/>
+      <stop offset="1" stop-color="#9a3412"/>
+    </linearGradient>
+    <linearGradient id="jogloRoofShade" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#991b1b"/>
+      <stop offset=".6" stop-color="#7f1d1d"/>
+      <stop offset="1" stop-color="#450a0a"/>
+    </linearGradient>
+
+    <!-- Teak Wood (Kayu Jati) -->
+    <linearGradient id="teakPillar" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#d97706"/>
+      <stop offset=".4" stop-color="#b45309"/>
+      <stop offset="1" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="teakFloor" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff7ed"/>
+      <stop offset=".5" stop-color="#ffedd5"/>
+      <stop offset="1" stop-color="#fed7aa"/>
+    </linearGradient>
+
+    <!-- Woven Rush Mat (Tikar Mendong) -->
+    <linearGradient id="tikarMendong" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fef3c7"/>
+      <stop offset=".5" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#fcd34d"/>
+    </linearGradient>
+
+    <!-- Slit-drum (Kentongan Kayu Jati) -->
+    <linearGradient id="kentonganGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#b45309"/>
+      <stop offset=".5" stop-color="#78350f"/>
+      <stop offset="1" stop-color="#451a03"/>
+    </linearGradient>
+
+    <!-- Courtyard Brick Pavers -->
+    <pattern id="pavingPattern" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <path d="M0 12h24M12 0v24" stroke="#d6b896" stroke-width="1.2" opacity=".4"/>
+    </pattern>
+
+    <!-- Soft Ambient Filters -->
+    <filter id="softShadowHerit" x="-40%" y="-50%" width="180%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="bldgShadowHerit" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Ground Shadow -->
+  <ellipse cx="805" cy="897" rx="650" ry="140" fill="#2d0f07" opacity=".28" filter="url(#softShadowHerit)"/>
+
+  <!-- BASE ISOMETRIC ISLAND (Heritage Courtyard Ground) -->
+  <path d="M92 680 795 318 1510 700 803 1058 92 680Z" fill="url(#islandSideHerit)" opacity=".95"/>
+  <path d="M92 680 803 1058 1510 700 1494 682 803 1025 108 666Z" fill="#2d0a02" opacity=".85"/>
+  <path d="M92 662 795 300 1510 682 803 1040 92 662Z" fill="url(#islandTopHerit)"/>
+  <path d="M92 662 795 300 1510 682 803 1040 92 662Z" fill="url(#pavingPattern)"/>
+
+  <!-- Heritage Garden Grass Accents -->
+  <path d="M140 640 420 500 520 560 220 700Z" fill="#84cc16" opacity=".5"/>
+  <path d="M1100 480 1420 620 1340 700 1020 540Z" fill="#65a30d" opacity=".45"/>
+
+  <!-- ========================================== -->
+  <!-- GRAND PENDOPO JOGLO TRADISIONAL JAWA       -->
+  <!-- ========================================== -->
+
+  <!-- Pendopo Elevated Foundation Terrace (Umpak Pendopo) -->
+  <g id="pendopoBase">
+    <!-- Drop Shadow -->
+    <polygon points="340,680 780,450 1260,670 780,920" fill="#2d0a02" opacity=".35" filter="url(#bldgShadowHerit)"/>
+
+    <!-- Bottom Stone Plinth -->
+    <polygon points="380,660 780,440 1200,650 780,880" fill="#991b1b"/>
+    <polygon points="380,660 780,880 780,900 380,680" fill="#7f1d1d"/>
+    <polygon points="780,880 1200,650 1200,670 780,900" fill="#450a0a"/>
+
+    <!-- Polished Floor (Lantai Pendopo Marmer/Teraso Krem) -->
+    <polygon points="400,650 780,445 1180,640 780,860" fill="url(#teakFloor)"/>
+
+    <!-- Carved Teak Wooden Railing Border (Pagar Pembatas Truntum) -->
+    <path d="M420 640 L760 455" stroke="#78350f" stroke-width="6"/>
+    <path d="M800 455 L1160 635" stroke="#451a03" stroke-width="6"/>
+    <path d="M420 640 L760 840" stroke="#78350f" stroke-width="6"/>
+    <path d="M800 840 L1160 635" stroke="#450a0a" stroke-width="6"/>
+  </g>
+
+  <!-- Central Woven Mats (Tikar Mendong Warga) -->
+  <polygon points="560,650 780,530 1000,640 780,770" fill="url(#tikarMendong)"/>
+  <!-- Tikar Edge Hem (Pita Merah Pinggiran Tikar) -->
+  <polygon points="560,650 780,530 1000,640 780,770" stroke="#b91c1c" stroke-width="3" fill="none"/>
+
+  <!-- Meeting Tea Table & Refreshment (Meja Teh Poci & Jajanan) -->
+  <g id="tehPociTable" transform="translate(760, 630)">
+    <!-- Low Wooden Table -->
+    <polygon points="-30,0 0,-15 30,0 0,15" fill="#78350f"/>
+    <polygon points="-30,0 0,15 0,22 -30,7" fill="#451a03"/>
+    <polygon points="0,15 30,0 30,7 0,22" fill="#271002"/>
+    <!-- Clay Teapot (Poci Tanah Liat Khas Tegal/Jawa) -->
+    <ellipse cx="-8" cy="-5" rx="6" ry="7" fill="#c2410c"/>
+    <circle cx="-8" cy="-11" r="3" fill="#ea580c"/>
+    <path d="M-14 -5 Q-18 -5 -16 -2" stroke="#9a3412" stroke-width="2" fill="none"/>
+    <!-- Tea Cups (Cangkir Gerabah) -->
+    <circle cx="8" cy="-4" r="3.5" fill="#ea580c"/>
+    <circle cx="15" cy="2" r="3.5" fill="#ea580c"/>
+    <!-- Plate with Jajanan Pasar (Pisang Rebus & Lemper) -->
+    <ellipse cx="2" cy="5" rx="8" ry="4" fill="#fef08a"/>
+    <ellipse cx="0" cy="4" rx="4" ry="2" fill="#15803d"/>
+  </g>
+
+  <!-- Village Citizens in Deliberation (Warga Duduk Melingkar Rembug Desa) -->
+  <!-- Village Elder / Lurah / Kepala Dusun (Wearing Beskap & Blangkon) -->
+  <g id="tetuaLurah" transform="translate(780, 560)">
+    <ellipse cx="0" cy="18" rx="14" ry="7" fill="#78350f" opacity=".3"/>
+    <!-- Sitting body in dark batik/beskap -->
+    <ellipse cx="0" cy="10" rx="12" ry="9" fill="#1e293b"/>
+    <!-- Traditional Blangkon Headwear (Blangkon Mondholan Jawa) -->
+    <ellipse cx="0" cy="-2" rx="7" ry="5" fill="#7c2d12"/>
+    <circle cx="6" cy="-1" r="3" fill="#451a03"/> <!-- Mondholan back bump -->
+    <!-- Hands in respectful discussion gesture -->
+    <circle cx="-5" cy="8" r="3" fill="#fed7aa"/>
+    <circle cx="5" cy="8" r="3" fill="#fed7aa"/>
+  </g>
+
+  <!-- Warga 2 (Left side) -->
+  <g id="wargaKiri1" transform="translate(660, 620)">
+    <ellipse cx="0" cy="12" rx="12" ry="6" fill="#78350f" opacity=".3"/>
+    <ellipse cx="0" cy="6" rx="10" ry="8" fill="#047857"/> <!-- Green batik shirt -->
+    <ellipse cx="0" cy="-4" rx="6" ry="5" fill="#854d0e"/> <!-- Blangkon -->
+    <circle cx="5" cy="-3" r="2.5" fill="#451a03"/>
+  </g>
+
+  <!-- Warga 3 (Far Left side) -->
+  <g id="wargaKiri2" transform="translate(620, 680)">
+    <ellipse cx="0" cy="12" rx="12" ry="6" fill="#78350f" opacity=".3"/>
+    <ellipse cx="0" cy="6" rx="10" ry="8" fill="#b91c1c"/> <!-- Red/brown shirt -->
+    <circle cx="0" cy="-4" r="5" fill="#1e293b"/> <!-- Peci hitam -->
+  </g>
+
+  <!-- Warga 4 (Right side) -->
+  <g id="wargaKanan1" transform="translate(890, 620)">
+    <ellipse cx="0" cy="12" rx="12" ry="6" fill="#78350f" opacity=".3"/>
+    <ellipse cx="0" cy="6" rx="10" ry="8" fill="#0284c7"/> <!-- Blue batik shirt -->
+    <circle cx="0" cy="-4" r="5" fill="#1e293b"/> <!-- Peci hitam -->
+  </g>
+
+  <!-- Warga 5 (Far Right side) -->
+  <g id="wargaKanan2" transform="translate(930, 680)">
+    <ellipse cx="0" cy="12" rx="12" ry="6" fill="#78350f" opacity=".3"/>
+    <ellipse cx="0" cy="6" rx="10" ry="8" fill="#ca8a04"/> <!-- Golden yellow shirt -->
+    <ellipse cx="0" cy="-4" rx="6" ry="5" fill="#78350f"/> <!-- Blangkon -->
+    <circle cx="-5" cy="-3" r="2.5" fill="#451a03"/>
+  </g>
+
+  <!-- Warga 6 (Foreground side) -->
+  <g id="wargaDepan" transform="translate(780, 720)">
+    <ellipse cx="0" cy="12" rx="12" ry="6" fill="#78350f" opacity=".3"/>
+    <ellipse cx="0" cy="6" rx="11" ry="8" fill="#475569"/> <!-- Gray batik -->
+    <circle cx="0" cy="-4" r="5" fill="#1e293b"/> <!-- Peci -->
+  </g>
+
+  <!-- 4 MASTER PILLARS (Soko Guru Kayu Jati Kokoh) -->
+  <g id="sokoGuru">
+    <!-- Back-Left Pillar -->
+    <rect x="580" y="470" width="14" height="150" rx="2" fill="url(#teakPillar)"/>
+    <rect x="577" y="615" width="20" height="8" rx="2" fill="#78350f"/>
+    <!-- Back-Right Pillar -->
+    <rect x="980" y="470" width="14" height="150" rx="2" fill="#78350f"/>
+    <rect x="977" y="615" width="20" height="8" rx="2" fill="#451a03"/>
+    <!-- Front-Left Pillar -->
+    <rect x="580" y="550" width="14" height="170" rx="2" fill="url(#teakPillar)"/>
+    <rect x="577" y="715" width="20" height="8" rx="2" fill="#78350f"/>
+    <!-- Front-Right Pillar -->
+    <rect x="980" y="550" width="14" height="170" rx="2" fill="#78350f"/>
+    <rect x="977" y="715" width="20" height="8" rx="2" fill="#451a03"/>
+
+    <!-- Perimeter Outer Columns (Tiang Emperan Kayu Jati) -->
+    <rect x="440" y="580" width="10" height="100" rx="2" fill="url(#teakPillar)"/>
+    <rect x="1130" y="580" width="10" height="100" rx="2" fill="#78350f"/>
+  </g>
+
+  <!-- GRAND MULTI-TIER JOGLO ROOF (Atap Tajug Lawakan Khas Jawa) -->
+  <g id="atapJoglo">
+    <!-- Tier 1: Lower Flared Roof (Atap Emperan Lebar) -->
+    <!-- Left Slope (Lit by morning/day sun) -->
+    <polygon points="780,360 360,570 780,670" fill="url(#jogloRoofTop)"/>
+    <!-- Right Slope (Shaded) -->
+    <polygon points="780,360 780,670 1220,560" fill="url(#jogloRoofShade)"/>
+    <!-- Back Slopes -->
+    <polygon points="780,360 780,300 360,570" fill="#c2410c" opacity=".8"/>
+    <polygon points="780,360 780,300 1220,560" fill="#7f1d1d" opacity=".9"/>
+
+    <!-- Tier 2: Steep Upper Pyramid (Atap Brunjung Tinggi Khas Joglo) -->
+    <!-- Left Slope -->
+    <polygon points="780,180 620,380 780,430" fill="url(#jogloRoofTop)"/>
+    <!-- Right Slope -->
+    <polygon points="780,180 780,430 940,380" fill="url(#jogloRoofShade)"/>
+    <!-- Back Slopes -->
+    <polygon points="780,180 780,140 620,380" fill="#ea580c"/>
+    <polygon points="780,180 780,140 940,380" fill="#450a0a"/>
+
+    <!-- Roof Ridge & Mustaka Crown (Ujung Mustaka Keramik/Logam Joglo) -->
+    <line x1="780" y1="180" x2="780" y2="430" stroke="#fef08a" stroke-width="3" opacity=".7"/>
+    <circle cx="780" cy="180" r="8" fill="#fbbf24"/>
+    <polygon points="780,155 774,180 786,180" fill="#f59e0b"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- POS RONDA / POS KAMLING WITH KENTONGAN     -->
+  <!-- ========================================== -->
+  <g id="posRonda" transform="translate(240, 680)">
+    <!-- Shadow -->
+    <polygon points="-20,50 60,10 120,45 40,85" fill="#2d0a02" opacity=".35" filter="url(#bldgShadowHerit)"/>
+
+    <!-- Raised Timber Platform -->
+    <polygon points="0,40 60,10 100,30 40,60" fill="#b45309"/>
+    <polygon points="0,40 40,60 40,75 0,55" fill="#78350f"/>
+    <polygon points="40,60 100,30 100,45 40,75" fill="#451a03"/>
+
+    <!-- Bamboo Posts -->
+    <line x1="10" y1="35" x2="10" y2="-10" stroke="#78350f" stroke-width="4"/>
+    <line x1="55" y1="10" x2="55" y2="-30" stroke="#451a03" stroke-width="4"/>
+    <line x1="90" y1="25" x2="90" y2="-15" stroke="#451a03" stroke-width="4"/>
+    <line x1="45" y1="55" x2="45" y2="5" stroke="#78350f" stroke-width="4"/>
+
+    <!-- Simple Hipped Tile Roof -->
+    <polygon points="50,-45 0,-10 50,5" fill="#ea580c"/>
+    <polygon points="50,-45 50,5 100,-15" fill="#991b1b"/>
+
+    <!-- AUTHENTIC CARVED KENTONGAN KAYU JATI -->
+    <rect x="42" y="10" width="8" height="28" rx="3" fill="url(#kentonganGrad)"/>
+    <!-- Slit opening in kentongan center -->
+    <line x1="46" y1="14" x2="46" y2="34" stroke="#1c0b02" stroke-width="2"/>
+    <!-- Hanging cord & beater (Pemukul Kentongan) -->
+    <line x1="46" y1="5" x2="46" y2="10" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="54" y1="18" x2="52" y2="32" stroke="#d97706" stroke-width="2.5"/>
+    <circle cx="54" cy="18" r="2.5" fill="#78350f"/>
+
+    <!-- Bulletin board on Pos Ronda wall -->
+    <polygon points="12,18 36,6 36,24 12,36" fill="#fef3c7"/>
+    <line x1="16" y1="22" x2="32" y2="14" stroke="#b45309" stroke-width="1.5"/>
+    <line x1="16" y1="28" x2="32" y2="20" stroke="#b45309" stroke-width="1.5"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- INDONESIAN FLAGPOLE (Bendera Merah Putih)  -->
+  <!-- ========================================== -->
+  <g id="flagPole" transform="translate(1240, 720)">
+    <!-- Base Plinth -->
+    <ellipse cx="0" cy="15" rx="14" ry="7" fill="#64748b"/>
+    <!-- Tall Silver Mast -->
+    <line x1="0" y1="15" x2="0" y2="-150" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="-150" r="4" fill="#fbbf24"/>
+    <!-- Waving Indonesian Red & White Flag -->
+    <path d="M0 -145 Q25 -152 50 -142 Q40 -125 50 -115 Q25 -125 0 -115 Z" fill="#dc2626"/>
+    <path d="M0 -115 Q25 -125 50 -115 Q40 -98 50 -88 Q25 -98 0 -88 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- HERITAGE BANYAN TREE (Pohon Beringin Desa) -->
+  <!-- ========================================== -->
+  <g id="beringinDesa" transform="translate(1320, 480)">
+    <!-- Twisted Gnarled Trunk with Aerial Roots (Akar Gantung Beringin) -->
+    <path d="M40 180 Q30 90 50 20" stroke="#5c3822" stroke-width="16" fill="none"/>
+    <!-- Aerial root drops -->
+    <line x1="25" y1="70" x2="25" y2="175" stroke="#784b2e" stroke-width="3"/>
+    <line x1="32" y1="80" x2="32" y2="178" stroke="#784b2e" stroke-width="2.5"/>
+    <line x1="60" y1="75" x2="60" y2="178" stroke="#784b2e" stroke-width="3"/>
+
+    <!-- Lush Spreading Canopy Volumes -->
+    <ellipse cx="50" cy="10" rx="90" ry="50" fill="#15803d"/>
+    <ellipse cx="20" cy="-20" rx="70" ry="40" fill="#166534"/>
+    <ellipse cx="70" cy="-30" rx="75" ry="45" fill="#22c55e"/>
+    <ellipse cx="45" cy="-60" rx="60" ry="35" fill="#4ade80" opacity=".85"/>
+  </g>
+</svg>

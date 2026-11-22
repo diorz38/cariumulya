@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="titleIrrig descIrrig">
+  <title id="titleIrrig">Ilustrasi 3D Pembangunan Saluran Irigasi Sawah Desa</title>
+  <desc id="descIrrig">Pembangunan pintu air bendungan irigasi sawah, saluran pasangan batu kali, aliran air jernih, dan kerja bakti warga desa.</desc>
+  <defs>
+    <!-- Island Base Gradients -->
+    <linearGradient id="islandTopIrrig" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fed7aa"/>
+      <stop offset=".45" stop-color="#fdba74"/>
+      <stop offset="1" stop-color="#fb923c"/>
+    </linearGradient>
+    <linearGradient id="islandSideIrrig" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#9a3412"/>
+      <stop offset="1" stop-color="#431407"/>
+    </linearGradient>
+
+    <!-- Water Dynamics -->
+    <linearGradient id="streamGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7dd3fc"/>
+      <stop offset=".45" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="waterFallFoam" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset=".6" stop-color="#e0f2fe"/>
+      <stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+
+    <!-- Concrete Dam & Steel Sluice Gate -->
+    <linearGradient id="concreteWall" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#cbd5e1"/>
+      <stop offset=".5" stop-color="#94a3b8"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="concreteShade" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#64748b"/>
+      <stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="steelGate" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#0284c7"/>
+      <stop offset=".5" stop-color="#0369a1"/>
+      <stop offset="1" stop-color="#075985"/>
+    </linearGradient>
+
+    <!-- Masonry Stone Canal (Pasangan Batu Kali) -->
+    <linearGradient id="mortarCap" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#e2e8f0"/>
+      <stop offset=".5" stop-color="#cbd5e1"/>
+      <stop offset="1" stop-color="#94a3b8"/>
+    </linearGradient>
+    <pattern id="riverStonePattern" width="30" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <ellipse cx="8" cy="8" rx="6" ry="4" fill="#64748b" stroke="#334155" stroke-width="1.5"/>
+      <ellipse cx="22" cy="12" rx="7" ry="5" fill="#475569" stroke="#1e293b" stroke-width="1.5"/>
+      <ellipse cx="14" cy="18" rx="5" ry="4" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+    </pattern>
+
+    <!-- Construction Wheelbarrow (Arko Kuning/Oranye) -->
+    <linearGradient id="wheelbarrowGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#d97706"/>
+    </linearGradient>
+
+    <!-- Surrounding Paddy Green -->
+    <linearGradient id="paddyGradIrrig" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#a7f3d0"/>
+      <stop offset=".5" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="softShadowIrrig" x="-40%" y="-50%" width="180%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="damShadow" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Shadow -->
+  <ellipse cx="805" cy="897" rx="650" ry="140" fill="#301103" opacity=".28" filter="url(#softShadowIrrig)"/>
+
+  <!-- BASE ISOMETRIC ISLAND (Terracotta Earth Ground) -->
+  <path d="M92 680 795 318 1510 700 803 1058 92 680Z" fill="url(#islandSideIrrig)" opacity=".95"/>
+  <path d="M92 680 803 1058 1510 700 1494 682 803 1025 108 666Z" fill="#2d0a02" opacity=".85"/>
+  <path d="M92 662 795 300 1510 682 803 1040 92 662Z" fill="url(#islandTopIrrig)"/>
+
+  <!-- Surrounding Rice Fields Nourished by Irrigation -->
+  <!-- Upper Left Rice Plot -->
+  <path d="M180 540 520 380 620 440 280 610Z" fill="url(#paddyGradIrrig)"/>
+  <!-- Lower Right Rice Plot -->
+  <path d="M1020 540 1420 620 1260 840 920 690Z" fill="url(#paddyGradIrrig)"/>
+
+  <!-- ========================================== -->
+  <!-- MAIN RIVER & IRRIGATION DAM (Bendung Desa) -->
+  <!-- ========================================== -->
+
+  <!-- Upstream Water Reservoir (Kolam Tampung Hulu) -->
+  <polygon points="560,340 795,300 940,360 700,410" fill="url(#streamGrad)"/>
+  <!-- Water Shimmer on reservoir -->
+  <polygon points="600,345 780,310 900,365 720,400" fill="#bae6fd" opacity=".5"/>
+
+  <!-- DAM / WEIR CONCRETE WALL STRUCTURE -->
+  <g id="bendunganIrigasi">
+    <!-- Dam Shadow -->
+    <polygon points="580,480 940,430 1020,530 660,590" fill="#2d0a02" opacity=".35" filter="url(#damShadow)"/>
+
+    <!-- Left Wing Wall (Tembok Sayap Kiri) -->
+    <polygon points="540,380 640,340 655,360 555,405" fill="url(#concreteWall)"/>
+    <polygon points="555,405 655,360 655,430 555,475" fill="url(#concreteShade)"/>
+
+    <!-- Right Wing Wall (Tembok Sayap Kanan) -->
+    <polygon points="880,340 980,380 965,405 865,360" fill="url(#concreteWall)"/>
+    <polygon points="865,360 965,405 965,475 865,430" fill="url(#concreteShade)"/>
+
+    <!-- Central Weir Spillway Crest (Mercu Bendung Beton) -->
+    <polygon points="655,360 865,360 865,385 655,385" fill="url(#concreteWall)"/>
+    <!-- Overflow Cascading Water (Air Terjun Melimpas di Mercu) -->
+    <polygon points="655,385 865,385 865,455 655,455" fill="url(#waterFallFoam)"/>
+    <!-- Churning White Water Foam at Dam Toe (Kolam Olak Busa Putih) -->
+    <ellipse cx="760" cy="460" rx="110" ry="20" fill="#ffffff" opacity=".95"/>
+    <ellipse cx="760" cy="465" rx="125" ry="25" fill="#e0f2fe" opacity=".7"/>
+
+    <!-- OPERATIONAL GANTRY & DUAL STEEL SLUICE GATES (Pintu Air Besi) -->
+    <!-- Steel Gantry Towers (Tiang Rangka Pintu Air) -->
+    <rect x="670" y="270" width="12" height="110" rx="2" fill="url(#concreteWall)"/>
+    <rect x="745" y="270" width="12" height="110" rx="2" fill="url(#concreteWall)"/>
+    <rect x="825" y="270" width="12" height="110" rx="2" fill="url(#concreteWall)"/>
+    <!-- Overhead Walkway Platform (Jembatan Pelayan Pintu Air) -->
+    <polygon points="650,270 850,270 860,285 660,285" fill="#334155"/>
+
+    <!-- Mechanical Handwheels for Gate Raising (Roda Pemutar Manual) -->
+    <ellipse cx="712" cy="265" rx="14" ry="6" fill="#dc2626"/>
+    <circle cx="712" cy="265" r="4" fill="#991b1b"/>
+    <line x1="712" y1="265" x2="712" y2="330" stroke="#0284c7" stroke-width="4"/> <!-- Threaded Lift Rod -->
+
+    <ellipse cx="790" cy="265" rx="14" ry="6" fill="#dc2626"/>
+    <circle cx="790" cy="265" r="4" fill="#991b1b"/>
+    <line x1="790" y1="265" x2="790" y2="340" stroke="#0284c7" stroke-width="4"/>
+
+    <!-- Blue Steel Gates (Daun Pintu Air Baja Biru) -->
+    <rect x="690" y="325" width="46" height="50" rx="2" fill="url(#steelGate)"/>
+    <!-- Horizontal reinforcement ribs on gate -->
+    <line x1="692" y1="335" x2="734" y2="335" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="692" y1="350" x2="734" y2="350" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="692" y1="365" x2="734" y2="365" stroke="#38bdf8" stroke-width="2"/>
+
+    <rect x="768" y="335" width="46" height="40" rx="2" fill="url(#steelGate)"/>
+    <line x1="770" y1="345" x2="812" y2="345" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="770" y1="360" x2="812" y2="360" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- Water Level Gauge (Peil Schaal Kuning-Hitam) -->
+    <rect x="657" y="360" width="6" height="80" fill="#fef08a"/>
+    <line x1="657" y1="375" x2="663" y2="375" stroke="#000" stroke-width="1.5"/>
+    <line x1="657" y1="390" x2="663" y2="390" stroke="#000" stroke-width="1.5"/>
+    <line x1="657" y1="405" x2="663" y2="405" stroke="#000" stroke-width="1.5"/>
+    <line x1="657" y1="420" x2="663" y2="420" stroke="#000" stroke-width="1.5"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- MAIN PRIMARY CANAL (Saluran Pasangan Batu)  -->
+  <!-- ========================================== -->
+  <g id="saluranIrigasi">
+    <!-- Canal Bed Water Flow (Aliran Air Irigasi Primer) -->
+    <path d="M720 480 Q640 620 540 820 L660 880 Q760 670 820 480 Z" fill="url(#streamGrad)"/>
+    <!-- Canal Flow Waves & Currents -->
+    <path d="M710 520 Q660 630 580 770" stroke="#e0f2fe" stroke-width="3" fill="none" opacity=".8"/>
+    <path d="M750 540 Q710 650 640 800" stroke="#e0f2fe" stroke-width="3" fill="none" opacity=".8"/>
+
+    <!-- Left Masonry Embankment (Tanggul Batu Kali Kiri) -->
+    <path d="M720 480 L700 465 L500 800 L540 820 Z" fill="url(#concreteShade)"/>
+    <path d="M700 465 L500 800" stroke="url(#mortarCap)" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Right Masonry Embankment (Tanggul Batu Kali Kanan) -->
+    <path d="M820 480 L845 465 L685 860 L660 880 Z" fill="url(#concreteWall)"/>
+    <path d="M845 465 L685 860" stroke="url(#mortarCap)" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Tertiary Distribution Gate (Bangunan Sadap / Pintu Air Bagi Tersier) -->
+    <polygon points="780,620 860,670 850,710 770,660" fill="url(#concreteWall)"/>
+    <line x1="820" y1="630" x2="820" y2="690" stroke="#0284c7" stroke-width="4"/>
+    <circle cx="820" cy="630" r="6" fill="#dc2626"/>
+    <!-- Water channeling off to right rice plots -->
+    <path d="M830 670 Q940 700 1050 670" stroke="url(#streamGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M840 670 Q940 700 1050 670" stroke="#e0f2fe" stroke-width="3" fill="none" opacity=".8"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- CIVIC WORKS CONSTRUCTION ZONE (Kerja Bakti)-->
+  <!-- ========================================== -->
+
+  <!-- Pile of River Stones (Tumpukan Batu Kali Proyek) -->
+  <g id="tumpukanBatu" transform="translate(380, 680)">
+    <ellipse cx="30" cy="25" rx="35" ry="12" fill="#2d0a02" opacity=".35"/>
+    <ellipse cx="20" cy="20" rx="14" ry="9" fill="#64748b"/>
+    <ellipse cx="40" cy="18" rx="16" ry="10" fill="#475569"/>
+    <ellipse cx="30" cy="10" rx="15" ry="10" fill="#94a3b8"/>
+    <ellipse cx="14" cy="14" rx="10" ry="7" fill="#475569"/>
+    <ellipse cx="46" cy="12" rx="12" ry="8" fill="#64748b"/>
+    <ellipse cx="30" cy="2" rx="12" ry="8" fill="#cbd5e1"/>
+  </g>
+
+  <!-- Sand Pile (Tumpukan Pasir Cor Pasangan Batu) -->
+  <g id="tumpukanPasir" transform="translate(480, 640)">
+    <polygon points="20,0 0,25 40,25" fill="#fde047"/>
+    <polygon points="20,0 40,25 60,18" fill="#ca8a04"/>
+  </g>
+
+  <!-- Stacked Cement Bags (Tumpukan Sak Semen Proyek) -->
+  <g id="sakSemen" transform="translate(340, 750)">
+    <polygon points="0,15 25,2 50,15 25,28" fill="#e2e8f0"/>
+    <polygon points="0,15 25,28 25,36 0,23" fill="#94a3b8"/>
+    <polygon points="25,28 50,15 50,23 25,36" fill="#64748b"/>
+    <rect x="18" y="12" width="14" height="6" fill="#dc2626" opacity=".8"/> <!-- Logo Semen -->
+
+    <polygon points="2,3 27,-10 52,3 27,16" fill="#e2e8f0"/>
+    <polygon points="2,3 27,16 27,24 2,11" fill="#94a3b8"/>
+    <polygon points="27,16 52,3 52,11 27,24" fill="#64748b"/>
+    <rect x="20" y="0" width="14" height="6" fill="#dc2626" opacity=".8"/>
+  </g>
+
+  <!-- Yellow Construction Wheelbarrow (Gerobak Dorong Arko) -->
+  <g id="gerobakArko" transform="translate(440, 780)">
+    <!-- Shadow -->
+    <ellipse cx="25" cy="25" rx="25" ry="8" fill="#2d0a02" opacity=".4"/>
+    <!-- Pneumatic Rubber Wheel -->
+    <circle cx="8" cy="20" r="9" fill="#1e293b"/>
+    <circle cx="8" cy="20" r="4" fill="#64748b"/>
+    <!-- Yellow Tray Pan (Bak Besi) -->
+    <polygon points="12,18 42,5 48,15 16,28" fill="url(#wheelbarrowGrad)"/>
+    <polygon points="12,18 16,28 10,26" fill="#b45309"/>
+    <!-- Handles & Legs -->
+    <line x1="20" y1="24" x2="24" y2="32" stroke="#475569" stroke-width="3"/>
+    <line x1="38" y1="12" x2="60" y2="6" stroke="#dc2626" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wooden Batter Boards & String Lines (Bowplank & Benang Pengukur) -->
+  <g id="bowplank" transform="translate(680, 860)">
+    <rect x="0" y="0" width="4" height="28" fill="#78350f"/>
+    <rect x="40" y="-12" width="4" height="28" fill="#78350f"/>
+    <line x1="0" y1="5" x2="44" y2="-7" stroke="#fde047" stroke-width="3"/> <!-- Timber plank -->
+    <line x1="2" y1="2" x2="42" y2="-10" stroke="#ffffff" stroke-width="1.5"/> <!-- White builder string -->
+  </g>
+
+  <!-- Builders / Villagers Working in Cooperation (Kerja Bakti Warga Desa) -->
+  <!-- Builder 1: Laying canal stones with trowel -->
+  <g id="tukangBatu" transform="translate(640, 740)">
+    <ellipse cx="14" cy="26" rx="14" ry="6" fill="#2d0a02" opacity=".4"/>
+    <!-- Squatting body in orange civic builder vest -->
+    <ellipse cx="14" cy="14" rx="10" ry="8" fill="#ea580c"/>
+    <rect x="9" y="10" width="10" height="4" fill="#fef08a"/> <!-- Reflective tape -->
+    <!-- Safety helmet (Helm Proyek Kuning) -->
+    <ellipse cx="14" cy="2" rx="7" ry="5" fill="#facc15"/>
+    <!-- Trowel tool in hand (Sendok Semen) -->
+    <polygon points="26,18 34,14 30,22" fill="#94a3b8"/>
+  </g>
+
+  <!-- Builder 2: Supervising with clipboard on canal bank -->
+  <g id="mandorDesa" transform="translate(860, 600)">
+    <ellipse cx="15" cy="45" rx="14" ry="6" fill="#2d0a02" opacity=".4"/>
+    <line x1="12" y1="22" x2="8" y2="44" stroke="#1e293b" stroke-width="4"/>
+    <line x1="18" y1="22" x2="22" y2="44" stroke="#1e293b" stroke-width="4"/>
+    <!-- Blue technical shirt -->
+    <rect x="8" y="10" width="14" height="15" rx="2" fill="#0284c7"/>
+    <!-- White Engineer Hat -->
+    <ellipse cx="15" cy="4" rx="7" ry="5" fill="#ffffff"/>
+    <!-- Clipboard in hand (Papan Gambar Bestek Irigasi) -->
+    <polygon points="22,14 30,10 32,22 24,26" fill="#fef08a"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Latar atmosfer digital desa pada malam hari</title>
+  <desc id="desc">Latar malam luas dengan langit navy, cahaya bulan, awan lembut, dan partikel digital untuk halaman utama.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#061426"/>
+      <stop offset=".48" stop-color="#0b2545"/>
+      <stop offset="1" stop-color="#123b63"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop stop-color="#dff7ff" stop-opacity=".72"/>
+      <stop offset=".5" stop-color="#7dd3fc" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1100" fill="url(#sky)"/>
+  <circle cx="1260" cy="180" r="250" fill="url(#glow)"/>
+  <circle cx="1255" cy="175" r="74" fill="#dff7ff" opacity=".72"/>
+  <g fill="#b8d8ee" opacity=".28">
+    <ellipse cx="190" cy="220" rx="92" ry="24"/>
+    <ellipse cx="250" cy="198" rx="55" ry="30"/>
+    <ellipse cx="1000" cy="170" rx="90" ry="21"/>
+    <ellipse cx="1060" cy="152" rx="46" ry="27"/>
+  </g>
+  <g fill="#7dd3fc" opacity=".35">
+    <circle cx="410" cy="120" r="5"/><circle cx="430" cy="145" r="3"/><circle cx="1450" cy="255" r="4"/>
+    <circle cx="1480" cy="230" r="3"/><circle cx="760" cy="105" r="3"/>
+  </g>
+</svg>

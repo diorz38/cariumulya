@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="titleHeritNight descHeritNight">
+  <title id="titleHeritNight">Ilustrasi Malam 3D Musyawarah Warga Desa Jawa di Pendopo Joglo</title>
+  <desc id="descHeritNight">Suasana malam musyawarah dan jagongan warga di Pendopo Joglo dengan hangatnya lampu gantung tembaga, lentera pos ronda, dan keteduhan budaya Jawa.</desc>
+  <defs>
+    <!-- Night Island Base -->
+    <linearGradient id="islandTopHeritNight" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2d130e"/>
+      <stop offset=".5" stop-color="#1f0b07"/>
+      <stop offset="1" stop-color="#120503"/>
+    </linearGradient>
+    <linearGradient id="islandSideHeritNight" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1c0703"/>
+      <stop offset="1" stop-color="#0a0201"/>
+    </linearGradient>
+
+    <!-- Night Joglo Roof -->
+    <linearGradient id="jogloRoofNightA" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7f1d1d"/>
+      <stop offset=".5" stop-color="#450a0a"/>
+      <stop offset="1" stop-color="#200404"/>
+    </linearGradient>
+    <linearGradient id="jogloRoofNightB" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#450a0a"/>
+      <stop offset="1" stop-color="#150202"/>
+    </linearGradient>
+
+    <!-- Warm Hanging Lamp Illumination Radial -->
+    <radialGradient id="pendopoLampGlow" cx="50%" cy="50%" r="50%">
+      <stop stop-color="#fffbeb"/>
+      <stop offset=".25" stop-color="#fef08a" stop-opacity=".9"/>
+      <stop offset=".6" stop-color="#f59e0b" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#b45309" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="lanternGlowHerit" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient Shadow -->
+  <ellipse cx="805" cy="897" rx="650" ry="140" fill="#0d0302" opacity=".5" filter="url(#lanternGlowHerit)"/>
+
+  <!-- BASE ISOMETRIC ISLAND -->
+  <path d="M92 680 795 318 1510 700 803 1058 92 680Z" fill="url(#islandSideHeritNight)"/>
+  <path d="M92 680 803 1058 1510 700 1494 682 803 1025 108 666Z" fill="#0a0201"/>
+  <path d="M92 662 795 300 1510 682 803 1040 92 662Z" fill="url(#islandTopHeritNight)"/>
+
+  <!-- ========================================== -->
+  <!-- GRAND PENDOPO JOGLO (Night Glow)          -->
+  <!-- ========================================== -->
+  <!-- Base Terrace -->
+  <polygon points="380,660 780,440 1200,650 780,880" fill="#450a0a"/>
+  <polygon points="380,660 780,880 780,900 380,680" fill="#200404"/>
+  <polygon points="780,880 1200,650 1200,670 780,900" fill="#150202"/>
+  <polygon points="400,650 780,445 1180,640 780,860" fill="#2d130e"/>
+
+  <!-- Tikar Mendong under warm ceiling glow -->
+  <polygon points="560,650 780,530 1000,640 780,770" fill="#78350f"/>
+
+  <!-- WARM INTERIOR PENDOPO ILLUMINATION -->
+  <ellipse cx="780" cy="640" rx="190" ry="95" fill="url(#pendopoLampGlow)" filter="url(#lanternGlowHerit)"/>
+
+  <!-- Tea Table in Warm Light -->
+  <g id="tehPociTableNight" transform="translate(760, 630)">
+    <polygon points="-30,0 0,-15 30,0 0,15" fill="#451a03"/>
+    <ellipse cx="-8" cy="-5" rx="6" ry="7" fill="#ea580c"/>
+    <circle cx="-8" cy="-11" r="3" fill="#f97316"/>
+    <circle cx="8" cy="-4" r="3.5" fill="#f59e0b"/>
+    <circle cx="15" cy="2" r="3.5" fill="#f59e0b"/>
+  </g>
+
+  <!-- Warga in warm night meeting silhouette -->
+  <g id="tetuaLurahNight" transform="translate(780, 560)">
+    <ellipse cx="0" cy="10" rx="12" ry="9" fill="#0f172a"/>
+    <ellipse cx="0" cy="-2" rx="7" ry="5" fill="#451a03"/>
+    <circle cx="6" cy="-1" r="3" fill="#271002"/>
+  </g>
+  <g transform="translate(660, 620)"><ellipse cx="0" cy="6" rx="10" ry="8" fill="#064e3b"/><circle cx="0" cy="-4" r="5" fill="#451a03"/></g>
+  <g transform="translate(620, 680)"><ellipse cx="0" cy="6" rx="10" ry="8" fill="#7f1d1d"/><circle cx="0" cy="-4" r="5" fill="#020617"/></g>
+  <g transform="translate(890, 620)"><ellipse cx="0" cy="6" rx="10" ry="8" fill="#0369a1"/><circle cx="0" cy="-4" r="5" fill="#020617"/></g>
+  <g transform="translate(930, 680)"><ellipse cx="0" cy="6" rx="10" ry="8" fill="#854d0e"/><circle cx="0" cy="-4" r="5" fill="#451a03"/></g>
+  <g transform="translate(780, 720)"><ellipse cx="0" cy="6" rx="11" ry="8" fill="#1e293b"/><circle cx="0" cy="-4" r="5" fill="#020617"/></g>
+
+  <!-- Teak Master Pillars in Warm Light -->
+  <rect x="580" y="470" width="14" height="150" rx="2" fill="#78350f"/>
+  <rect x="980" y="470" width="14" height="150" rx="2" fill="#451a03"/>
+  <rect x="580" y="550" width="14" height="170" rx="2" fill="#78350f"/>
+  <rect x="980" y="550" width="14" height="170" rx="2" fill="#451a03"/>
+
+  <!-- Traditional Hanging Brass Chandelier Lamp (Lampu Robyong Gantung) -->
+  <line x1="780" y1="360" x2="780" y2="480" stroke="#b45309" stroke-width="3"/>
+  <circle cx="780" cy="485" r="9" fill="#fef08a" filter="url(#lanternGlowHerit)"/>
+  <polygon points="770,480 790,480 780,495" fill="#fbbf24"/>
+
+  <!-- Joglo Roof in Night Silhouette with Rim Lighting -->
+  <!-- Lower Roof -->
+  <polygon points="780,360 360,570 780,670" fill="url(#jogloRoofNightA)"/>
+  <polygon points="780,360 780,670 1220,560" fill="url(#jogloRoofNightB)"/>
+  <!-- Upper Pyramid -->
+  <polygon points="780,180 620,380 780,430" fill="url(#jogloRoofNightA)"/>
+  <polygon points="780,180 780,430 940,380" fill="url(#jogloRoofNightB)"/>
+  <!-- Gold Top Ornament -->
+  <circle cx="780" cy="180" r="7" fill="#d97706"/>
+
+  <!-- Pos Ronda Night with Lantern -->
+  <g id="posRondaNight" transform="translate(240, 680)">
+    <polygon points="0,40 60,10 100,30 40,60" fill="#451a03"/>
+    <polygon points="50,-45 0,-10 50,5" fill="#7f1d1d"/>
+    <polygon points="50,-45 50,5 100,-15" fill="#450a0a"/>
+    <!-- Hanging Lantern inside Pos Ronda -->
+    <circle cx="45" cy="5" r="5" fill="#fef08a" filter="url(#lanternGlowHerit)"/>
+    <rect x="42" y="10" width="8" height="28" rx="3" fill="#451a03"/>
+  </g>
+
+  <!-- Flagpole at Night -->
+  <g transform="translate(1240, 720)">
+    <line x1="0" y1="15" x2="0" y2="-150" stroke="#475569" stroke-width="4"/>
+    <path d="M0 -145 Q25 -152 50 -142 Q40 -125 50 -115 Q25 -125 0 -115 Z" fill="#991b1b"/>
+    <path d="M0 -115 Q25 -125 50 -115 Q40 -98 50 -88 Q25 -98 0 -88 Z" fill="#94a3b8"/>
+  </g>
+</svg>
